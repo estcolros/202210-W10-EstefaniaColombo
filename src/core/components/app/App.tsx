@@ -12,13 +12,13 @@ export function App() {
         );
         setGentlemen(allSelectGentleman);
     };
-    const getSelectGentleman = (id: number) => {
+    const setSelectGentleman = (id: number) => {
         const getSelectGentleman = gentlemen.map((item) =>
             item.id === id ? { ...item, selected: true } : item
         );
         setGentlemen(getSelectGentleman);
     };
-    const getDeleteGentleman = (id: number) => {
+    const setDeleteGentleman = (id: number) => {
         const getDeleteGentleman = gentlemen.filter((item) => id !== item.id);
         setGentlemen(getDeleteGentleman);
     };
@@ -36,8 +36,8 @@ export function App() {
                         <Gentleman
                             key={gentleman.id}
                             gentlemanInfo={gentleman}
-                            setDeleteGentleman={getDeleteGentleman}
-                            setSelectGentleman={getSelectGentleman}
+                            setDeleteGentleman={setDeleteGentleman}
+                            setSelectGentleman={setSelectGentleman}
                         ></Gentleman>
                     ))}
                 </ul>
