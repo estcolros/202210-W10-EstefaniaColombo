@@ -45,7 +45,7 @@ Use the following components: App, Info, Button, Gentleman
 
 ## Netlify
 
-**Deploy:**
+**Deploy:** https://202210-w10-estcolros.netlify.app
 
 ## SonarCloud
 
